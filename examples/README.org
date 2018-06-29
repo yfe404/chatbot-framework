@@ -1,0 +1,17 @@
+* Chatbot Framework Examples
+
+** messenger_echobot
+
+Getting started example. It is a simple example showcasing the creation of a bot for facebook.
+The bot simply echoes messages (as it name implies). 
+
+
+** messenger_dialogflow_smalltalks
+
+Messenger bot example that uses [[https://dialogflow.com/docs/reference/small-talk][Dialogflow smalltalk]].
+
+
+** messenger_postbacks
+
+Simple example showcasing the creation of a bot for facebook messenger than perform actions (here just sending a message) 
+when it receives a particular postback. 
