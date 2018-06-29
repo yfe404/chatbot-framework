@@ -1,8 +1,8 @@
 import os
 
 from flask import Flask, Response, request
-from core.channels.channel import FacebookMessengerInputChannel, FacebookMessengerOutputChannel
-from core.utils.webhook import validate_facebook_webhook
+from chatbot_framework.channels.channel import FacebookMessengerInputChannel, FacebookMessengerOutputChannel
+from chatbot_framework.utils.webhook import validate_facebook_webhook
 
 app = Flask(__name__)
 
