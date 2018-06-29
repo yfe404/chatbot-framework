@@ -1,5 +1,7 @@
 * Chatbot Framework
 
+* Status
+[[https://travis-ci.org/yafeunteun/chatbot-framework][file:https://travis-ci.org/yafeunteun/chatbot-framework.svg?branch=master]] [[https://coveralls.io/r/yafeunteun/chatbot-framework][file:https://coveralls.io/repos/yafeunteun/chatbot-framework/badge.svg]]
 
 
 ** Environement Variables
