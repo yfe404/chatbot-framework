@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install python-coveralls  # Add me to install python-coveralls
+before_script:
+  - pip install -r dev-requirements.txt
+  - nosetests --with-coverage  --cover-package=core
+script:
+  - python setup.py install
+after_success:
+  - coveralls                     # Add me to upload reports to coveralls.io
