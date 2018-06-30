@@ -1,0 +1,39 @@
+* Messenger Dialogflow Smalltalk Bot
+
+** How to deploy 
+
+*** Using zappa
+
+In this directory, create a =zappa_settings.json= file (see example below) 
+#+BEGIN_SRC sh
+{
+    "dev": {
+        "app_function": "main.app",
+        "aws_region": "eu-west-1",
+        "profile_name": "default",
+        "project_name": "messenger_dialogflow_smalltalk_bot",
+        "runtime": "python3.6",
+        "environment_variables": {
+            "FB_ACCESS_TOKEN": "<TO_COMPLETE>",
+            "FB_VERIFY_TOKEN": "<TO_COMPLETE>",
+            "DIALOGFLOW_API_KEY": "<TO_COMPLETE>"
+        }
+    }
+}
+#+END_SRC
+
+This will allow you to deploy the bot on Amazon AWS lambda taking care of settings up 
+API Gateway. Don't forget to replace the items in the =json= file 
+with your own values. Notice though that =app_function= and =runtime=
+should remain the same.
+
+When it's done you can deploy the bot using 
+#+BEGIN_SRC sh
+zappa deploy
+#+END_SRC
+
+and update the function using (if you already have deployed 
+the bot but want to update it)
+#+BEGIN_SRC 
+zappa update
+#+END_SRC
