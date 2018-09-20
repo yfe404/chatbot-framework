@@ -6,7 +6,7 @@ from ..nlp_engines import Dialogflow
 class TddDialogflowWrapper(unittest.TestCase):
     
     def setUp(self):
-        api_key = "3b43833d08be4225a7552e5d5a646631"
+        api_key = "69eea4c060c24f82bddb741a391c8d5f"
         self.dialogflow = Dialogflow(api_key, "my_session", "en")
 
     def test_send_text_message(self):
